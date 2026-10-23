@@ -1,0 +1,30 @@
+
+# Node.js dependencies and generated build files
+node_modules/
+dist/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Local database files — exclude until reviewed
+database/*.sqlite
+database/*.sqlite3
+database/*.db
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
