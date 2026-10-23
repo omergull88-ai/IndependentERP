@@ -1,30 +1,78 @@
 
-# Node.js dependencies and generated build files
+# Node.js dependencies and build output
 node_modules/
 dist/
 
 # Python cache and virtual environments
 __pycache__/
 *.py[cod]
+*$py.class
 .venv/
 venv/
+env/
+ENV/
 
 # Secrets and local configuration
 .env
 .env.*
 !.env.example
+.envrc
+.pypirc
 
-# Local database files — exclude until reviewed
+# Local ERP databases — keep private
 database/*.sqlite
 database/*.sqlite3
 database/*.db
+*.sqlite-journal
+*.db-journal
+db.sqlite3
+db.sqlite3-journal
+
+# Python build and test artifacts
+build/
+develop-eggs/
+.eggs/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# Python packaging
+.Python
+wheels/
+share/python-wheels/
+pip-wheel-metadata/
+MANIFEST
 
 # Logs and temporary files
 *.log
 *.tmp
+tempCodeRunnerFile.py
 
 # Editor and operating-system files
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Python tools
+.spyderproject
+.spyproject
+.ropeproject
+.pytype/
+.pyre/
+.dmypy.json
+ipython_config.py
+.ipynb_checkpoints/
+__pypackages__/
+
+# Framework local state
+instance/
+.webassets-cache/
+.streamlit/secrets.toml
+.abstra/
